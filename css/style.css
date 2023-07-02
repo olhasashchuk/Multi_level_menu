@@ -1,0 +1,397 @@
+@import url("reset.css");
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat/Montserrat-Regular.woff2'), format(woff2);
+   font-weight: 400;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat/Montserrat-Bold.woff2'), format(woff2);
+   font-weight: 700;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'OpenSans';
+   src: url('../fonts/OpenSans/OpenSans-Regular.woff2'), format(woff2);
+   font-weight: 400;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'OpenSans';
+   src: url('../fonts/OpenSans/OpenSans-Bold.woff2'), format(woff2);
+   font-weight: 700;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('../fonts/Roboto/Roboto-Regular.woff2'), format(woff2);
+   font-weight: 400;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('../fonts/Roboto/Roboto-Bold.woff2'), format(woff2);
+   font-weight: 700;
+   font-display: swap;
+}
+
+/* global */
+html {
+	height: 100%;
+   font-size: 10px;
+}
+
+body {
+   background: #e8e8e8;
+   height: 100%;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+}
+
+.font-opensens {
+   font-family: 'OpenSans', sans-serif;
+   font-weight: 400;
+}
+
+.font-roboto {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+}
+
+.wrapper {
+   display: flex;
+   flex-flow: column;
+   min-height: 100%;
+}
+
+main {
+   flex: 1;
+   padding-top: 6rem;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.bg-black {
+   background: black;
+}
+
+.bg-pink {
+   background: rgba(255, 206, 206, 1);
+}
+
+.bg-grey {
+   background: grey;
+}
+
+/* ----------------------------------- */
+
+/* header */
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   gap: 3rem;
+   flex-wrap: wrap;
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+
+.menu li {
+   position: relative;
+}
+
+.menu li a {
+   display: block;
+   text-decoration: none;
+   padding: 2rem;
+   color: white;
+}
+
+.menu li a:hover {
+   background: rgb(164, 164, 164);
+   color: red;
+}
+
+.hidden-first {   
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+}
+
+.hidden-first li {
+   background: grey;
+
+}
+
+.hidden-first li:first-child {
+	margin-top: .5rem;
+}
+
+.menu li:hover .hidden-first {
+   display: block;
+}
+
+.hidden-second {   
+   display: none;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: -100%;
+}
+
+.hidden-second li:first-child {
+	margin-top: -1px;
+   margin-right: .5rem;
+}
+
+.menu li:hover .hidden-second {
+   display: block;
+}
+
+/* main section logo */
+
+.container-pad {
+   padding: 4rem 0;
+}
+
+.main-title {
+	background: #e8e8e8;
+   font-size: 5rem;
+   font-weight: 700;
+   color: red;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 4rem 0;
+}
+
+.logo {
+   width: 760px;
+   position: relative;
+}
+
+.logo img {
+   height: 100%;
+   object-fit: cover;
+}
+
+/* Position */
+
+.hidden-logo {
+	display: none;
+	position: absolute;
+   top: 50%;
+	left: 0;
+	background: #e8e8e8d6;
+	color: black;
+   padding: 2rem;
+   font-size: 2.4rem;
+   text-align: center;
+   line-height: 3.6rem;
+   margin-top: -10rem;
+}
+
+.logo:hover .hidden-logo {
+	display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+/* GELLERY */
+
+/* SECTION "ITEMS" */
+.section-title {
+   font-weight: 700;
+   font-size: 4rem;
+   color: red;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 4rem;
+}
+
+.container-items {
+   display: flex;
+   justify-content: flex-start;
+   gap: 6rem;
+   flex-wrap: wrap;
+}
+
+.item {
+   position: relative;
+   flex: 0 1 30%;
+   padding: 2rem;
+   text-align: center;
+   font-size: 2rem;
+   line-height: 2.5rem;
+}
+
+.item div {
+   justify-content: center;
+}
+
+.image-item {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   padding-bottom: 2rem;
+}
+
+/* Position */
+
+.hidden {
+   display: none;
+	position: absolute;
+   overflow: hidden;
+   width: 100%;
+   height: 20rem;
+   top: 50%;
+	left: 0;
+	background: rgba(255, 0, 0, 0.5);
+	color: white;
+   padding: 10px;
+   margin-top: -10rem;
+   font-size: 1.6rem;
+}
+
+.item:hover .hidden {
+	display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+/* -------------------------------------- */
+
+/* Position FIXED */
+
+.menu-left {
+   background: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	top: 50%;
+	left: 0;
+   margin-top: -15rem;
+}
+
+.menu-left li:hover {
+   background: rgba(255, 0, 0, 0.4);
+}
+
+.menu-left li a {
+   text-decoration: none;
+   display: block;
+   color: black;
+   font-size: 2rem;
+   padding: 2rem 3rem;
+}
+
+/* INLINE BLOCK */
+
+.box {
+   width: 1200px;
+   margin: 2rem auto;
+   font-size: 2rem;
+}
+
+/* inline-block */
+.d-i-block {
+   display: inline-block;
+}
+
+/* back-ground */
+.bg-grey {
+   background: grey;
+}
+
+.bg-green {
+   background: green;
+}
+
+.bg-orange {
+   background: orange;
+}
+
+/* outline */
+.outline {
+   outline: 2px solid red;
+}
+
+/* font-size */
+
+.fz-0 {
+   font-size: 0;
+}
+
+.fz-20 {
+   font-size: 2rem;
+}
+
+/* width */
+.w-400 {
+   width: 40rem;
+}
+
+.w-800 {
+   width: 80rem;
+}
+
+/* height */
+.h-100 {
+   height: 10rem;
+}
+
+.h-133 {
+   height: 13.3rem;
+}
+
+.h-200 {
+   height: 20rem;
+}
+
+.h-400 {
+   height: 40rem;
+}
+
+/* FLOAT */
+
+.child-float {
+   float: left;
+}
+
+.clr {
+   clear: both;
+}
+
+/* FLEX */
+
+.box-flex {
+   display: flex;
+}
+
+.box-flex-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.box-flex-row {
+   display: flex;
+   flex-direction: row;
+}
+
+

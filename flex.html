@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flex model</title>
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+   <div class="wrapper">
+      <header class="bg-grey">
+         <ul class="container menu">
+            <li><a href="../index.html">Home page</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li>
+               <a href="#">Homeworks</a>
+               <ul class="hidden-first">
+                  <li><a href="../inline-block.html">Inline Block</a></li>
+                  <li><a href="../float.html">Float</a></li>
+                  <li><a href="#">Blocks</a>
+                     <ul class="hidden-second">
+                        <li><a href="#">Flex</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </header>
+
+      <main class="font-roboto">
+         <section class="container container-pad">
+            <h2 class="section-title">Flex model</h2>
+            <div class="box">
+               <div class="bg-pink box-flex">
+                  <div class="w-400 h-400 outline">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda magni exercitationem facere deleniti a pariatur nihil numquam sunt, quidem accusantium dolorum tempore placeat soluta cumque cum! Vitae, delectus quae.</div>
+                  <div class="w-400 h-400 outline">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi nihil corrupti sit, harum facilis nesciunt. Recusandae ratione quibusdam qui facilis nobis aperiam, sint quam mollitia. Nesciunt explicabo dicta aut.</div>
+                  <div class="w-400 h-400 outline">3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim et tempore, voluptatum esse soluta illum porro aspernatur nam dignissimos commodi laudantium incidunt alias, obcaecati consequuntur vel a ipsum, quidem molestias!</div>
+               </div>
+         
+               <div class="bg-green box-flex">
+                  <div class="w-800">
+                     <div class="h-200 outline">4</div>
+                     <div class="h-200 outline">5</div>
+                  </div>
+            
+                  <div class="w-400 outline">
+                     <div class="h-133 outline">6</div>
+                     <div class="h-133 outline">7</div>
+                     <div class="h-133 outline">8</div>
+                  </div>
+               </div>      
+         
+               <div class="bg-orange box-flex">
+                  <div class = "w-400 outline">9</div>
+                  <div class = "w-800 outline box-flex-column">
+                     <div class = "h-200 outline">10</div>
+                     <div class="box-flex-row">
+                        <div class = "outline w-400">11</div>
+                           <div class = "w-400">
+                              <div class="h-100 outline">12</div>
+                              <div class="h-100 outline">13</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </section>
+      </main>
+   </div>
+
+
+</body>
+</html>
