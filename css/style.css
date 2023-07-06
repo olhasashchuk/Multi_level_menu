@@ -54,7 +54,6 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-weight: 400;
 }
-
 .font-opensens {
    font-family: 'OpenSans', sans-serif;
    font-weight: 400;
@@ -114,6 +113,26 @@ header {
    text-transform: uppercase;
 }
 
+.icon {
+   width: 30px;
+   height: 30px;
+   fill: white;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   margin-top: -1.5rem;
+}
+
+.icon-down {
+   width: 30px;
+   height: 30px;
+   fill: white;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   margin-top: -1.5rem;
+}
+
 .menu li {
    position: relative;
 }
@@ -121,13 +140,26 @@ header {
 .menu li a {
    display: block;
    text-decoration: none;
-   padding: 2rem;
    color: white;
+   padding: 2rem 2rem 2rem 4rem;
+   white-space: nowrap;
+}
+
+.menu li:last-child a {
+   padding: 2rem 4rem 2rem 2rem;
 }
 
 .menu li a:hover {
    background: rgb(164, 164, 164);
    color: red;
+}
+
+.menu li a:hover .icon {
+   fill: red;
+}
+
+.menu li a:hover .icon-down {
+   fill: red;
 }
 
 .hidden-first {   
@@ -137,16 +169,15 @@ header {
    left: 0;
 }
 
+.hidden-first li:last-child a {
+   padding: 2rem 2rem 2rem 4rem;
+}
+
 .hidden-first li {
    background: grey;
-
 }
 
-.hidden-first li:first-child {
-	margin-top: .5rem;
-}
-
-.menu li:hover .hidden-first {
+.menu > li:hover .hidden-first {
    display: block;
 }
 
@@ -155,15 +186,14 @@ header {
    position: absolute;
    width: 100%;
    top: 0;
-   left: -100%;
+   right: 100%;
 }
 
-.hidden-second li:first-child {
-	margin-top: -1px;
-   margin-right: .5rem;
+.hidden-second li:first-child a {
+   padding: 2rem;
 }
 
-.menu li:hover .hidden-second {
+.hidden-first > li:hover .hidden-second {
    display: block;
 }
 
@@ -393,5 +423,26 @@ header {
    display: flex;
    flex-direction: row;
 }
+
+/* footer */
+
+.footer {
+   display: flex;
+   flex-flow: row;
+   padding: 2rem;
+   justify-content: center;
+   gap: 4rem;
+}
+
+.icon-footer {
+   width: 30px;
+   height: 30px;
+   fill: white;
+}
+
+.footer li a:hover .icon-footer {
+   fill: red;
+}
+
 
 

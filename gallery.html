@@ -4,23 +4,40 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Gallery Sniig</title>
-   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <div class="wrapper">
       
       <header class="bg-grey">
          <ul class="container menu">
-            <li><a href="../index.html">Home page</a></li>
-            <li><a href="#">Gallery</a></li>
             <li>
-               <a href="#">Homeworks</a>
+               <a href="index.html">
+                  <svg class="icon"><use href="images/sprite.svg#homepage"></use></svg>
+                  <span>Home page</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <svg class="icon"><use href="images/sprite.svg#gallery"></use></svg>
+                  <span>Gallery</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <svg class="icon-down"><use href="images/sprite.svg#down"></use></svg>
+                  <span>Homeworks</span>
+               </a>
                <ul class="hidden-first">
-                  <li><a href="../inline-block.html">Inline Block</a></li>
-                  <li><a href="../float.html">Float</a></li>
-                  <li><a href="#">Blocks</a>
+                  <li><a href="inline-block.html">Inline Block</a></li>
+                  <li><a href="float.html">Float</a></li>
+                  <li>
+                     <a href="#">
+                        <svg class="icon"><use href="images/sprite.svg#left"></use></svg>
+                        <span>Blocks</span>
+                     </a>
                      <ul class="hidden-second">
-                        <li><a href="../flex.html">Flex</a></li>
+                        <li><a href="flex.html">Flex</a></li>
                      </ul>
                   </li>
                </ul>
@@ -35,7 +52,10 @@
                <div class="item bg-pink" id="item01">
                   <div class="hidden">Lorem ipsum dolor sit amet</div>
                   <div>
-                     <img class="image-item" src="../images/crystal_epilators1.png" alt="Crystal Epilators" width="646" height="646">
+                     <picture>
+                        <source srcset="images/crystal-epilators1.webp" type="image/webp">
+                        <img class="image-item" src="images/crystal_epilators1.png" alt="Crystal Epilators" width="646" height="646">
+                     </picture>
                   </div>
                   <h3 class="title">Crystal Epilators</h3>
                   <p>10 USD</p>
@@ -46,7 +66,7 @@
                      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                   </div>
                   <div>
-                     <img class="image-item" src="../images/colorlamb_razor3.png" alt="Colorlamb Razor" width="646" height="646">
+                     <img class="image-item" src="images/colorlamb_razor3.png" alt="Colorlamb Razor" width="646" height="646">
                   </div>
                   <h3 class="title">Colorlamb Razor</h3>
                   <p>9 USD</p>
@@ -55,7 +75,7 @@
                <div class="item bg-pink" id="item03">
                   <div class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, numquam aliquam delectus amet saepe expedita nisi nihil? Ex enim quam dolorum repudiandae, iusto vero modi nulla eius consequuntur quod alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem accusamus repellat, in eos error? Rerum atque aut eveniet dolorum magnam necessitatibus doloribus explicabo cupiditate, fugiat in praesentium vitae reprehenderit!</div>
                   <div>
-                     <img class="image-item" src="../images/bath_mousse5.png" alt="Bath Mousse" width="646" height="646">
+                     <img class="image-item" src="images/bath_mousse5.png" alt="Bath Mousse" width="646" height="646">
                   </div>
                   <h3 class="title">Bath Mousse</h3>
                   <p>8 USD</p>
@@ -64,7 +84,7 @@
                <div class="item bg-pink" id="item04">
                   <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptates! Aliquid totam ab iste eaque! Numquam iure laborum sit consequatur</div>
                   <div>
-                     <img class="image-item" src="../images/lucky_fine_dry_shampoo7.png" alt="Lucky Fine Dry Shampoo" width="646" height="646">
+                     <img class="image-item" src="images/lucky_fine_dry_shampoo7.png" alt="Lucky Fine Dry Shampoo" width="646" height="646">
                   </div>
                   <h3 class="title">Lucky Fine Dry Shampoo</h3>
                   <p>5 USD</p>
@@ -73,7 +93,7 @@
                <div class="item bg-pink" id="item05">
                   <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas incidunt odit optio praesentium aspernatur voluptatibus, recusandae similique atque adipisci voluptatum dolor, cupiditate placeat magnam natus maxime iure blanditiis eveniet numquam.</div>
                   <div>
-                     <img class="image-item" src="../images/razor_sniig9.png" alt="Razor Sniig" width="646" height="646">
+                     <img class="image-item" src="images/razor_sniig9.png" alt="Razor Sniig" width="646" height="646">
                   </div>
                   <h3 class="title">Razor Sniig</h3>
                   <p>15 USD</p>
@@ -91,6 +111,30 @@
             </ul>
          </div>   
       </main>
+      <footer class="bg-grey">
+         <ul class="container footer">
+            <li>            
+               <a href="https://www.facebook.com/profile.php?id=100075841607282" target="_blank">
+                  <svg class="icon-footer"><use href="images/sprite.svg#fb"></use></svg>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.instagram.com/sniig.in.ua/" target="_blank">
+                  <svg class="icon-footer"><use href="images/sprite.svg#instagram"></use></svg>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.tiktok.com/@snig.in.ua?_t=8cI1MtBVeAX&_r=1" target="_blank">
+                  <svg class="icon-footer"><use href="images/sprite.svg#tiktok"></use></svg>
+               </a>
+            </li>
+            <li>
+               <a href="#" target="_blank">
+                  <svg class="icon-footer"><use href="images/sprite.svg#viber"></use></svg>
+               </a>
+            </li>
+         </ul>
+      </footer>
    </div>
 </body>
 </html>
