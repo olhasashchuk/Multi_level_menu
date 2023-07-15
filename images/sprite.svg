@@ -52,5 +52,25 @@
       <symbol viewBox="0 0 36 36" id="telegram">
          <path d="M22.5 15L16.5 21L25.5 30L31.5 6L4.5 16.5L10.5 19.5L13.5 28.5L18 22.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol> 
-          
+
+      <symbol viewBox="0 0 24 24" id="plane">
+         <circle cx="12" cy="12" r="10" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 6V16" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 9L17.1962 12" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 9L6.80385 12" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 16L9.5 17.5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 16L14.5 17.5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      
+     <symbol viewBox="0 0 24 24" id="clock">
+         <circle cx="12" cy="12" r="10" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 6V12L16 16" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol viewBox="0 0 24 24" id="pie">
+         <circle cx="12" cy="12" r="10" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M12 2V12H22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+        
    </svg>

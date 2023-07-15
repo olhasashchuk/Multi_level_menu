@@ -68,6 +68,8 @@ body {
    display: flex;
    flex-flow: column;
    min-height: 100%;
+   padding-left: 7rem;
+   transition: padding .4s linear;
 }
 
 main {
@@ -94,6 +96,83 @@ main {
 
 /* ----------------------------------- */
 
+.left-menu-main {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 7rem;
+   padding-top: 6rem;
+   background: white;
+   z-index: 2;
+   overflow: hidden;
+   transition: width .4s linear;
+}
+.left-menu-main:hover {
+  width: 27rem;
+}
+
+.left-menu-main:hover + .wrapper {
+   padding-left: 27rem;
+}
+
+.left-menu-main:hover +.wrapper>header {
+   padding-left: 27rem;
+}
+
+.left-menu-main li a {
+   position: relative;
+   height: 5rem;  
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: grey;
+   font-size: 2rem;
+   padding:1rem 0rem 1rem 7rem;
+   display: block;
+   align-items: center;
+
+   /* display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 2rem; */
+}
+
+.left-menu-main li:hover a {
+   color: red;
+   background: rgba(255, 206, 206, 1);
+}
+
+.icon3-border {
+   border: 2px solid grey;
+   height: 32px;
+   width: 32px;
+   transform: rotate(45deg);
+   overflow: hidden;
+   position: absolute;
+   top: 50%;
+   left: 1rem;
+   margin-top: -1.6rem;
+}
+
+.icon3 {
+   height: 30px;
+   width: 30px;
+   fill: grey;
+   transform: rotate(-45deg); 
+   stroke: rgba(255, 206, 206, 1);
+}
+
+.left-menu-main li:hover a .icon3 {
+   transform: scale(1.2) rotate(-45deg);
+   fill: red;
+}
+
+.left-menu-main li:hover a .icon3-border {
+   border: 2px solid red;
+}
+
 /* header */
 
 header {
@@ -102,7 +181,8 @@ header {
    left: 0;
    right: 0;
    z-index: 1;
-   
+   padding-left: 7rem;
+   transition: padding .4s linear;
 }
 
 .menu {
@@ -487,6 +567,7 @@ header {
    width: 40px;
    height: 40px;
 }
+
 
 
 
