@@ -96,6 +96,84 @@ main {
 
 /* ----------------------------------- */
 
+/* right menu */
+
+.settings {
+   position: fixed;
+   background: white;
+   top: 50%;
+   right: 0;
+   transform: translate(100%, -50%);
+   font-size: 2rem;
+   padding: 40px 20px;
+   line-height: 1.6;
+   transition: transform .3s linear;
+   border-radius: 4px 0 0 4px;
+   box-shadow: 0 0 6px black;
+}
+
+.settings:hover {
+   transform: translate(0%,-50%);
+}
+
+.settings ul {
+   display: flex;
+   flex-flow: column;
+   gap: 10px;
+}
+
+.btn {
+   line-height: 1;
+   padding: 1rem 6rem;
+   background: #e8e8e8;
+   border: 1px solid #e8e8e8; 
+   border-radius: 4px 0 0 4px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.8rem;
+   cursor: pointer;
+   transition: all .3s linear;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background: rgba(255, 206, 206, 1);
+   box-shadow: 0 0 6px black;
+}
+
+.settings-icon {
+   background: grey;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translate(-100%, -50%);
+   padding: 6px;
+   cursor: pointer;
+   border-radius: 4px 0 0 4px;
+   line-height: 1;
+}
+
+.settings-icon svg {
+   height: 40px;
+   width: 40px;
+   fill: grey;
+   stroke: rgba(255, 206, 206, 1);
+   animation: settings-spin 3s linear infinite;
+}
+
+@keyframes settings-spin {
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.settings-icon svg:hover {
+   animation-play-state: paused;
+}
+
+.settings:hover > .settings-icon svg {
+   animation-play-state: paused;
+}
+
 .left-menu-main {
    position: fixed;
    top: 0;
@@ -107,7 +185,9 @@ main {
    z-index: 2;
    overflow: hidden;
    transition: width .4s linear;
+   box-shadow: 0 0 6px black;
 }
+
 .left-menu-main:hover {
   width: 27rem;
 }
@@ -120,8 +200,7 @@ main {
    padding-left: 27rem;
 }
 
-.left-menu-main li a {
-   position: relative;
+.left-menu-main-link {
    height: 5rem;  
    text-decoration: none;
    font-family: 'Montserrat', sans-serif;
@@ -129,17 +208,19 @@ main {
    text-transform: uppercase;
    color: grey;
    font-size: 2rem;
-   padding:1rem 0rem 1rem 7rem;
-   display: block;
+   padding: 1rem 2rem;
+   display: flex;
    align-items: center;
-
-   /* display: flex;
-   align-items: center;
-   justify-content: flex-start;
-   gap: 2rem; */
+   gap: 2rem;
+   white-space: nowrap;
 }
 
-.left-menu-main li:hover a {
+.left-menu-main-link span {
+   line-height: 10px;
+   flex: 0 0 auto;
+}
+
+.left-menu-main-link:hover {
    color: red;
    background: rgba(255, 206, 206, 1);
 }
@@ -149,11 +230,12 @@ main {
    height: 32px;
    width: 32px;
    transform: rotate(45deg);
+   transition: transform .3s linear;
    overflow: hidden;
-   position: absolute;
+   /* position: absolute;
    top: 50%;
    left: 1rem;
-   margin-top: -1.6rem;
+   margin-top: -1.6rem; */
 }
 
 .icon3 {
